@@ -15,8 +15,8 @@ df = pd.read_csv('diabetes_clean.csv')
 # =========================
 # SPLIT DATA
 # =========================
-X = df.drop('Outcome', axis=1)
-y = df['Outcome']
+X = df.drop('diabetes', axis=1)
+y = df['diabetes']
 
 X_train, X_test, y_train, y_test = train_test_split(
     X,
